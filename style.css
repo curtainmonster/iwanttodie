@@ -71,8 +71,8 @@ a:hover {
     display: none;
     transition: max-height 0.5s ease-in-out;
     list-style-type: none; /* Remove default list styling */
-    padding-left: 5px; /* Indent dropdown items */
-    width: 30px;
+    padding-left: 20px; /* Indent dropdown items */
+    width: 100px;
     min-width: 20px;
     background-color: white; /* Background color for dropdown */
     border-radius: 5px; /* Rounded corners */
