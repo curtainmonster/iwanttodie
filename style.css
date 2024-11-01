@@ -71,19 +71,21 @@ a:hover {
     display: none;
     transition: max-height 0.5s ease-in-out;
     list-style-type: none; /* Remove default list styling */
-    padding-left: 20px; /* Indent dropdown items */
-    width: 100px;
-    min-width: 20px;
+    padding-left: 0; /* Reset padding */
+    width: 200px; /* Desired width for dropdown */
+    min-width: 150px; /* Prevent it from being too small */
     background-color: white; /* Background color for dropdown */
     border-radius: 5px; /* Rounded corners */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Light shadow */
     z-index: 10; /* Ensure it is above other elements */
     position: absolute; /* Position the dropdown relative to the nearest positioned ancestor */
+    left: 0; /* Align it with the left edge of the parent */
+    top: 100%; /* Position it directly below the parent */
 }
 
 .dropdown li {
-    margin: 5px 0; /* Space between dropdown items */
-    padding: 10px; /* Padding for dropdown items */
+    margin: 0; /* Space between dropdown items */
+    padding: 10px 15px; /* Padding for dropdown items */
     transition: background 0.3s; /* Smooth background transition */
 }
 
@@ -97,7 +99,8 @@ a:hover {
 }
 
 .dropdown a:hover {
-    text-decoration: underline; /* Underline links on hover */
+    color: #feb47b; /* Change color on hover for better visibility */
+    text-decoration: none; /* No underline on hover for a cleaner look */
 }
 .dropdown li:hover {
     background: #f0f0f0; /* Light background on hover */
