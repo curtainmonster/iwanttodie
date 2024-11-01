@@ -9,7 +9,7 @@ h1 {
 }
 
 #subjects, #questions {
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 ul {
@@ -17,7 +17,7 @@ ul {
 }
 
 li {
-    margin: 10px;
+    margin: 20px;
 }
 
 a {
@@ -42,8 +42,8 @@ a:hover {
 
 .falling-face {
     position: absolute;
-    width: 50px; /* Adjust the size of each face */
-    height: 50px;
+    width: 70px; /* Adjust the size of each face */
+    height: 100px;
     opacity: 1;
     transition: opacity 2s ease-out; /* Controls the fading */
 }
