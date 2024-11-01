@@ -119,7 +119,7 @@ a:hover {
 .falling-face {
     position: absolute;
     width: 70px; /* Adjust the size of each face */
-    height: 100px;
+    height: 80px;
     opacity: 1;
     transition: opacity 3s ease-out; /* Controls the fading */
 }
