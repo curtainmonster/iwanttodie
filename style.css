@@ -27,7 +27,8 @@ ul {
 
 li {
     position: relative; /* Ensure dropdowns are positioned relative to this element */
-    margin: 20px;
+    margin: 20px; /* Space out list items */
+    padding-left: 20px; /* Add padding to create space on the left */
 }
 
 a {
@@ -78,7 +79,8 @@ a:hover {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Light shadow */
     z-index: 10; /* Ensure it is above other elements */
     position: absolute; /* Position the dropdown relative to the nearest positioned ancestor */
-    left: 0; /* Align it with the left edge of the parent */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Shift left by half its width */
     top: 100%; /* Position it directly below the parent */
 }
 
