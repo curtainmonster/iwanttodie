@@ -5,50 +5,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Questions</title>
     <link rel="stylesheet" href="style.css">
-
 </head>
 <body>
     <!-- Falling Face Effect -->
     <div id="face-container"></div>
     <script src="script.js" defer></script>
 
-
-    <h1>Why Not</h1>
+    <h1>Subjects</h1>
     
     <!-- Subject List -->
     <div id="subjects">
         <h2>Subjects</h2>
         <ul>
-            <li><a href="#subject1">Subject 1</a></li>
-            <li><a href="#subject2">Subject 2</a></li>
-            <li><a href="#subject3">Subject 3</a></li>
+            <li><a href="#subject1" onclick="toggleSubsection('subject1-answers')">Subject 1</a></li>
+            <li><a href="#subject2" onclick="toggleSubsection('subject2-answers')">Subject 2</a></li>
+            <li><a href="#subject3" onclick="toggleSubsection('subject3-answers')">Subject 3</a></li>
         </ul>
-    </div>
-    
-    <!-- Question Section -->
-    <div id="questions">
-        <h3 id="subject1">Subject 1</h3>
-        <p>Select question type:</p>
-        <ul>
-            <li><a href="#very-short-answers">Very Short Answers</a></li>
-            <li><a href="#short-answers">Short Answers</a></li>
-            <li><a href="#long-answers">Long Answers</a></li>
-        </ul>
-        
-        <div id="long-answers">
-            <h4>Long Answers</h4>
-            <ul>
-                <li><strong>Important ★★★★☆</strong> - Question 1: <span>Answer goes here</span></li>
-                <li><strong>Medium ★★★☆☆</strong> - Question 2: <span>Answer goes here</span></li>
-            </ul>
-        </div>
     </div>
 
-    <script src="script.js"></script>
-    
-    
-    <!-- Falling Face Effect -->
-<div id="face-container"></div>
+    <!-- Question Section -->
+    <div id="questions">
+        <div id="subject1-answers" style="display: none;">
+            <h3>Subject 1</h3>
+            <p>Select question type:</p>
+            <ul>
+                <li><a href="#very-short-answers">Very Short Answers</a></li>
+                <li><a href="#short-answers">Short Answers</a></li>
+                <li><a href="#long-answers">Long Answers</a></li>
+            </ul>
+
+            <!-- Long Answers Section -->
+            <div id="long-answers">
+                <h4>Long Answers</h4>
+                <ul>
+                    <li><strong>Important ★★★★☆</strong> - Question 1: <span>Answer goes here</span></li>
+                    <li><strong>Medium ★★★☆☆</strong> - Question 2: <span>Answer goes here</span></li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="subject2-answers" style="display: none;">
+            <h3>Subject 2</h3>
+            <p>Select question type:</p>
+            <ul>
+                <li><a href="#very-short-answers">Very Short Answers</a></li>
+                <li><a href="#short-answers">Short Answers</a></li>
+                <li><a href="#long-answers">Long Answers</a></li>
+            </ul>
+
+            <!-- Long Answers Section -->
+            <div id="long-answers">
+                <h4>Long Answers</h4>
+                <ul>
+                    <li><strong>Important ★★★★☆</strong> - Question 1: <span>Answer goes here</span></li>
+                    <li><strong>Medium ★★★☆☆</strong> - Question 2: <span>Answer goes here</span></li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="subject3-answers" style="display: none;">
+            <h3>Subject 3</h3>
+            <p>Select question type:</p>
+            <ul>
+                <li><a href="#very-short-answers">Very Short Answers</a></li>
+                <li><a href="#short-answers">Short Answers</a></li>
+                <li><a href="#long-answers">Long Answers</a></li>
+            </ul>
+
+            <!-- Long Answers Section -->
+            <div id="long-answers">
+                <h4>Long Answers</h4>
+                <ul>
+                    <li><strong>Important ★★★★☆</strong> - Question 1: <span>Answer goes here</span></li>
+                    <li><strong>Medium ★★★☆☆</strong> - Question 2: <span>Answer goes here</span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
 
 </body>
 </html>
