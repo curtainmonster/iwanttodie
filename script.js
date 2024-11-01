@@ -48,4 +48,3 @@ function toggleSubsection(subsectionId) {
         activeSubsection.style.display = 'block'; // Show the clicked subsection
     }
 }
-
