@@ -53,3 +53,21 @@ a:hover {
     0% { transform: translateY(-50px) rotate(0deg); }
     100% { transform: translateY(100vh) rotate(360deg); }
 }
+
+.dropdown {
+    list-style-type: none; /* Remove default list styling */
+    padding-left: 20px; /* Indent dropdown items */
+}
+
+.dropdown li {
+    margin: 5px 0; /* Space between dropdown items */
+}
+
+.dropdown a {
+    text-decoration: none; /* Remove underline from links */
+    color: #007BFF; /* Link color */
+}
+
+.dropdown a:hover {
+    text-decoration: underline; /* Underline links on hover */
+}

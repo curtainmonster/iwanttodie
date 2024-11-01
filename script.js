@@ -29,3 +29,8 @@ function faceWave() {
 
 // Run the faceWave function on page load
 window.onload = faceWave;
+
+function toggleDropdown(dropdownId) {
+    const dropdown = document.getElementById(dropdownId);
+    dropdown.style.display = dropdown.style.display === 'none' || dropdown.style.display === '' ? 'block' : 'none';
+}

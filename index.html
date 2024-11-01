@@ -17,25 +17,40 @@
     <div id="subjects">
         <h2>Subjects</h2>
         <ul>
-            <li><a href="#subject1" onclick="toggleSubsection('subject1-answers')">Subject 1</a></li>
-            <li><a href="#subject2" onclick="toggleSubsection('subject2-answers')">Subject 2</a></li>
-            <li><a href="#subject3" onclick="toggleSubsection('subject3-answers')">Subject 3</a></li>
+            <li>
+                <a href="javascript:void(0);" onclick="toggleDropdown('subject1-dropdown')">Subject 1</a>
+                <ul id="subject1-dropdown" class="dropdown" style="display: none;">
+                    <li><a href="#very-short-answers" onclick="toggleSubsection('very-short-answers')">Very Short Answers</a></li>
+                    <li><a href="#short-answers" onclick="toggleSubsection('short-answers')">Short Answers</a></li>
+                    <li><a href="#long-answers" onclick="toggleSubsection('long-answers')">Long Answers</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="javascript:void(0);" onclick="toggleDropdown('subject2-dropdown')">Subject 2</a>
+                <ul id="subject2-dropdown" class="dropdown" style="display: none;">
+                    <li><a href="#very-short-answers" onclick="toggleSubsection('very-short-answers')">Very Short Answers</a></li>
+                    <li><a href="#short-answers" onclick="toggleSubsection('short-answers')">Short Answers</a></li>
+                    <li><a href="#long-answers" onclick="toggleSubsection('long-answers')">Long Answers</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="javascript:void(0);" onclick="toggleDropdown('subject3-dropdown')">Subject 3</a>
+                <ul id="subject3-dropdown" class="dropdown" style="display: none;">
+                    <li><a href="#very-short-answers" onclick="toggleSubsection('very-short-answers')">Very Short Answers</a></li>
+                    <li><a href="#short-answers" onclick="toggleSubsection('short-answers')">Short Answers</a></li>
+                    <li><a href="#long-answers" onclick="toggleSubsection('long-answers')">Long Answers</a></li>
+                </ul>
+            </li>
         </ul>
     </div>
     
     <!-- Question Section -->
     <div id="questions">
-        <h3 id="subject1">Subject 1</h3>
-        <p>Select question type:</p>
-        <ul>
-            <li><a href="#very-short-answers" onclick="toggleSubsection('very-short-answers')">Very Short Answers</a></li>
-            <li><a href="#short-answers" onclick="toggleSubsection('short-answers')">Short Answers</a></li>
-            <li><a href="#long-answers" onclick="toggleSubsection('long-answers')">Long Answers</a></li>
-        </ul>
+        <h3>Answers</h3>
         
         <div id="very-short-answers" style="display: none;">
             <h4>Very Short Answers</h4>
-            <p>why the fucj not .</p>
+            <p>Answer for very short questions goes here.</p>
         </div>
         
         <div id="short-answers" style="display: none;">
