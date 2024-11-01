@@ -1,5 +1,4 @@
 body {
-
     background: linear-gradient(to right, #ff5fca, #ad7bfe);
     font-family: Arial, sans-serif;
     color: #333;
@@ -12,6 +11,7 @@ h1 {
     border-bottom: 2px solid #feb47b; /* Underline effect */
     font-size: 2.5em; /* Larger font size */
 }
+
 h2, h3 {
     color: #333;
     margin: 15px 0; /* Margin for spacing */
@@ -28,7 +28,6 @@ ul {
 li {
     position: relative; /* Ensure dropdowns are positioned relative to this element */
     margin: 20px;
-
 }
 
 a {
@@ -84,7 +83,7 @@ a:hover {
 }
 
 .dropdown li {
-    margin: 0; /* Space between dropdown items */
+    margin: 0; /* Remove margin for items */
     padding: 10px 15px; /* Padding for dropdown items */
     transition: background 0.3s; /* Smooth background transition */
 }
@@ -93,15 +92,18 @@ a:hover {
     display: block;
     max-height: 200px; /* Set according to your needs */
 }
+
 .dropdown a {
-    text-decoration: none; /* Remove underline from links */
+    display: block; /* Makes the entire area clickable */
+    padding: 10px 15px; /* Space inside dropdown items */
     color: #007BFF; /* Link color */
 }
 
 .dropdown a:hover {
     color: #feb47b; /* Change color on hover for better visibility */
-    text-decoration: none; /* No underline on hover for a cleaner look */
+    text-decoration: none; /* No underline on hover for cleaner look */
 }
+
 .dropdown li:hover {
     background: #f0f0f0; /* Light background on hover */
 }
@@ -114,14 +116,15 @@ a:hover {
     padding: 20px;
     transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition */
 }
+
 html {
     scroll-behavior: smooth;
 }
+
 .subject-card:hover {
     transform: translateY(-5px); /* Lift effect */
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
 }
-
 
 @keyframes fadeIn {
     from {
@@ -133,6 +136,7 @@ html {
         transform: translateY(0);
     }
 }
+
 @media (max-width: 600px) {
     h1 {
         font-size: 2em; /* Adjusted size for smaller screens */
