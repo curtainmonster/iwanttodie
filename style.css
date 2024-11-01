@@ -26,7 +26,9 @@ ul {
 }
 
 li {
+    position: relative; /* Ensure dropdowns are positioned relative to this element */
     margin: 20px;
+
 }
 
 a {
@@ -75,6 +77,8 @@ a:hover {
     background-color: white; /* Background color for dropdown */
     border-radius: 5px; /* Rounded corners */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Light shadow */
+    z-index: 10; /* Ensure it is above other elements */
+    position: absolute; /* Position the dropdown relative to the nearest positioned ancestor */
 }
 
 .dropdown li {
