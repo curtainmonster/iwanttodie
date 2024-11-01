@@ -46,7 +46,7 @@ nav a:hover {
 #hero {
     background: url('images/hero-bg.jpg') no-repeat center center/cover;
     padding: 100px 20px;
-    color: blue;
+    color: white;
 }
 
 .btn {
@@ -60,7 +60,7 @@ nav a:hover {
 }
 
 .btn:hover {
-    background-color: #ff5fca;
+    background-color: #ffffff;
 }
 
 main {
