@@ -30,7 +30,22 @@ function faceWave() {
 // Run the faceWave function on page load
 window.onload = faceWave;
 
+// Function to toggle dropdown visibility
 function toggleDropdown(dropdownId) {
     const dropdown = document.getElementById(dropdownId);
-    dropdown.style.display = dropdown.style.display === 'none' || dropdown.style.display === '' ? 'block' : 'none';
+    dropdown.style.display = dropdown.style.display === 'none' ? 'block' : 'none';
 }
+
+// Function to toggle answer sections
+function toggleSubsection(subsectionId) {
+    const subsections = document.querySelectorAll('#questions > div');
+    subsections.forEach(subsection => {
+        subsection.style.display = 'none'; // Hide all subsections
+    });
+
+    const activeSubsection = document.getElementById(subsectionId);
+    if (activeSubsection) {
+        activeSubsection.style.display = 'block'; // Show the clicked subsection
+    }
+}
+
