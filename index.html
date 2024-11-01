@@ -11,7 +11,7 @@
     <div id="face-container"></div>
     <script src="script.js" defer></script>
 
-    <h1>Subjects</h1>
+    <h1>Why Not</h1>
     
     <!-- Subject List -->
     <div id="subjects">
@@ -22,66 +22,36 @@
             <li><a href="#subject3" onclick="toggleSubsection('subject3-answers')">Subject 3</a></li>
         </ul>
     </div>
-
+    
     <!-- Question Section -->
     <div id="questions">
-        <div id="subject1-answers" style="display: none;">
-            <h3>Subject 1</h3>
-            <p>Select question type:</p>
-            <ul>
-                <li><a href="#very-short-answers">Very Short Answers</a></li>
-                <li><a href="#short-answers">Short Answers</a></li>
-                <li><a href="#long-answers">Long Answers</a></li>
-            </ul>
-
-            <!-- Long Answers Section -->
-            <div id="long-answers">
-                <h4>Long Answers</h4>
-                <ul>
-                    <li><strong>Important ★★★★☆</strong> - Question 1: <span>Answer goes here</span></li>
-                    <li><strong>Medium ★★★☆☆</strong> - Question 2: <span>Answer goes here</span></li>
-                </ul>
-            </div>
+        <h3 id="subject1">Subject 1</h3>
+        <p>Select question type:</p>
+        <ul>
+            <li><a href="#very-short-answers" onclick="toggleSubsection('very-short-answers')">Very Short Answers</a></li>
+            <li><a href="#short-answers" onclick="toggleSubsection('short-answers')">Short Answers</a></li>
+            <li><a href="#long-answers" onclick="toggleSubsection('long-answers')">Long Answers</a></li>
+        </ul>
+        
+        <div id="very-short-answers" style="display: none;">
+            <h4>Very Short Answers</h4>
+            <p>Answer for very short questions goes here.</p>
+        </div>
+        
+        <div id="short-answers" style="display: none;">
+            <h4>Short Answers</h4>
+            <p>Answer for short questions goes here.</p>
         </div>
 
-        <div id="subject2-answers" style="display: none;">
-            <h3>Subject 2</h3>
-            <p>Select question type:</p>
+        <div id="long-answers" style="display: none;">
+            <h4>Long Answers</h4>
             <ul>
-                <li><a href="#very-short-answers">Very Short Answers</a></li>
-                <li><a href="#short-answers">Short Answers</a></li>
-                <li><a href="#long-answers">Long Answers</a></li>
+                <li><strong>Important ★★★★☆</strong> - Question 1: <span>Answer goes here</span></li>
+                <li><strong>Medium ★★★☆☆</strong> - Question 2: <span>Answer goes here</span></li>
             </ul>
-
-            <!-- Long Answers Section -->
-            <div id="long-answers">
-                <h4>Long Answers</h4>
-                <ul>
-                    <li><strong>Important ★★★★☆</strong> - Question 1: <span>Answer goes here</span></li>
-                    <li><strong>Medium ★★★☆☆</strong> - Question 2: <span>Answer goes here</span></li>
-                </ul>
-            </div>
-        </div>
-
-        <div id="subject3-answers" style="display: none;">
-            <h3>Subject 3</h3>
-            <p>Select question type:</p>
-            <ul>
-                <li><a href="#very-short-answers">Very Short Answers</a></li>
-                <li><a href="#short-answers">Short Answers</a></li>
-                <li><a href="#long-answers">Long Answers</a></li>
-            </ul>
-
-            <!-- Long Answers Section -->
-            <div id="long-answers">
-                <h4>Long Answers</h4>
-                <ul>
-                    <li><strong>Important ★★★★☆</strong> - Question 1: <span>Answer goes here</span></li>
-                    <li><strong>Medium ★★★☆☆</strong> - Question 2: <span>Answer goes here</span></li>
-                </ul>
-            </div>
         </div>
     </div>
 
+    <script src="script.js"></script>
 </body>
 </html>
