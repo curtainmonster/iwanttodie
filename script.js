@@ -8,7 +8,7 @@ function createFallingFace() {
     face.style.left = Math.random() * 100 + 'vw';
     
     // Apply animation and add to the container
-    face.style.animation = `fall ${Math.random() * 3 + 2}s linear`;
+    face.style.animation = `fall ${Math.random() * 2 + 1}s linear`;
     
     // Append face to the container
     faceContainer.appendChild(face);
@@ -22,8 +22,8 @@ function createFallingFace() {
 
 // Create a wave of faces on page load
 function faceWave() {
-    for (let i = 0; i < 30; i++) { // Adjust number of faces
-        setTimeout(createFallingFace, i * 100); // Staggered wave effect
+    for (let i = 0; i < 60; i++) { // Adjust number of faces // changed value from 30 to 60
+        setTimeout(createFallingFace, i * 600); // Staggered wave effect // changed value from 100 to 600
     }
 }
 
