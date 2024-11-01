@@ -9,7 +9,7 @@ body {
 h1 {
     color: #333;
     padding: 20px;
-    border-bottom: 2px solid #feb47b; /* Underline effect */
+    /* Underline effect */
     font-size: 2.5em; /* Larger font size */
 }
 
@@ -53,7 +53,7 @@ nav a:hover {
     background-color: #feb47b;
     color: #333;
     padding: 10px 20px;
-    border-radius: 5px;
+    <-- border-radius: 5px -->
     text-decoration: none;
     font-weight: bold italic;
     transition: background 0.3s;
@@ -211,4 +211,15 @@ html {
         margin: 5px;
         padding: 15px; /* Adjust padding for smaller screens */
     }
+
+    #cursor-follow {
+    position: fixed;
+    pointer-events: none; /* Prevent interaction with the cursor follower */
+    transition: transform 0.1s ease; /* Smooth movement */
+}
+
+#cursor-follow img {
+    width: 50px; /* Adjust size as needed */
+    height: 50px; /* Adjust size as needed */
+}
 }

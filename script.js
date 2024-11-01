@@ -1,7 +1,7 @@
 function createFallingFace() {
     const faceContainer = document.getElementById('face-container');
     const face = document.createElement('img');
-    face.src = 'images/skull.png'; // Corrected path to your face image
+    face.src = 'images/banana.png'; // Corrected path to your face image
     face.classList.add('falling-face');
     
     // Random horizontal position
@@ -47,4 +47,22 @@ function toggleSubsection(subsectionId) {
     if (activeSubsection) {
         activeSubsection.style.display = 'block'; // Show the clicked subsection
     }
+
+    const cursorFollow = document.getElementById('cursor-follow');
+
+// Show the cursor-follow image when the mouse moves
+document.addEventListener('mousemove', (event) => {
+    cursorFollow.style.display = 'block'; // Show the image
+    cursorFollow.style.transform = `translate(${event.clientX}px, ${event.clientY}px)`;
+});
+
+// Optionally hide it when the mouse leaves the window
+document.addEventListener('mouseleave', () => {
+    cursorFollow.style.display = 'none';
+});
+
+// Optionally show it when the mouse enters the window again
+document.addEventListener('mouseenter', () => {
+    cursorFollow.style.display = 'block';
+});
 }
