@@ -1,7 +1,7 @@
 function createFallingFace() {
     const faceContainer = document.getElementById('face-container');
     const face = document.createElement('img');
-    face.src = 'image/phone.png'; // Path to your face image
+    face.src = 'images/face.png'; // Path to your face image
     face.classList.add('falling-face');
     
     // Random horizontal position
