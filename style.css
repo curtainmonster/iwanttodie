@@ -55,7 +55,7 @@ nav a:hover {
     padding: 10px 20px;
     border-radius: 5px;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: bold italic;
     transition: background 0.3s;
 }
 
