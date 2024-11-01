@@ -22,8 +22,8 @@ function createFallingFace() {
 
 // Create a wave of faces on page load
 function faceWave() {
-    for (let i = 0; i < 60; i++) { // Adjust number of faces // changed value from 30 to 60
-        setTimeout(createFallingFace, i * 600); // Staggered wave effect // changed value from 100 to 600
+    for (let i = 0; i < 30; i++) { // Adjust number of faces // changed value from 30 to 60
+        setTimeout(createFallingFace, i * 50); // Staggered wave effect // changed value from 100 to 600
     }
 }
 
