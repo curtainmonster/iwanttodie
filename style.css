@@ -37,7 +37,7 @@ a:hover {
     height: 100%;
     overflow: hidden;
     pointer-events: none;
-    z-index: 10; /* Keeps it on top while fading out */
+    z-index: 5; /* Keeps it on top while fading out */
 }
 
 .falling-face {
@@ -45,7 +45,7 @@ a:hover {
     width: 70px; /* Adjust the size of each face */
     height: 100px;
     opacity: 1;
-    transition: opacity 2s ease-out; /* Controls the fading */
+    transition: opacity 3s ease-out; /* Controls the fading */
 }
 
 /* Animation for face falling */
