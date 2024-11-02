@@ -18,7 +18,7 @@ h2, h3 {
     margin: 15px 0; /* Margin for spacing */
 }
 header {
-    background-color: #feb47b;
+    background-color: #333;
     padding: 10px 0;
 }
 
@@ -101,8 +101,8 @@ a {
 }
 
 a:hover {
-    color: #feb47b;
-    text-decoration: underline;
+    color: #ff872c;
+    text-decoration: bold;
 }
 
 #face-container {

@@ -16,7 +16,7 @@ function createFallingFace() {
     // Remove face after animation completes
     face.addEventListener('animationend', () => {
         face.style.opacity = '0'; // Start fading out
-        setTimeout(() => face.remove(), 2000); // Remove after fade out
+        setTimeout(() => face.remove(), 1000); // Remove after fade out
     });
 }
 
