@@ -44,7 +44,7 @@ function toggleSubsection(subsectionId) {
 }
 
 // Cursor follow effect
-function initializeCursorFollow() {
+//function initializeCursorFollow() {
     const cursorFollow = document.getElementById('cursor-follow');
 
     // Show the cursor-follow image when the mouse moves
