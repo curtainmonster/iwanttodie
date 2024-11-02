@@ -113,7 +113,7 @@ a:hover {
     height: 100%;
     overflow: hidden;
     pointer-events: none;
-    z-index: 5; /* Keeps it on top while fading out */
+    /* z-index: 1; /* Keeps it on top while fading out */
 }
 
 .falling-face {
