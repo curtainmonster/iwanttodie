@@ -1,34 +1,28 @@
+// Function to create a falling face effect
 function createFallingFace() {
     const faceContainer = document.getElementById('face-container');
     const face = document.createElement('img');
-    face.src = 'images/banana.png'; // Corrected path to your face image
+    face.src = 'images/banana.png'; // Path to your face image
     face.classList.add('falling-face');
     
-    // Random horizontal position
+    // Set random horizontal position and animation
     face.style.left = Math.random() * 100 + 'vw';
-    
-    // Apply animation and add to the container
     face.style.animation = `fall ${Math.random() * 2 + 1}s linear`;
     
-    // Append face to the container
+    // Append face to container and add fade-out effect after animation
     faceContainer.appendChild(face);
-
-    // Remove face after animation completes
     face.addEventListener('animationend', () => {
-        face.style.opacity = '0'; // Start fading out
-        setTimeout(() => face.remove(), 1000); // Remove after fade out
+        face.style.opacity = '0';
+        setTimeout(() => face.remove(), 1000); // Remove after fade-out
     });
 }
 
 // Create a wave of faces on page load
 function faceWave() {
-    for (let i = 0; i < 30; i++) { // Adjust number of faces // changed value from 30 to 60
-        setTimeout(createFallingFace, i * 50); // Staggered wave effect // changed value from 100 to 600
+    for (let i = 0; i < 60; i++) { // Increased number of faces for effect
+        setTimeout(createFallingFace, i * 600); // Adjusted stagger timing
     }
 }
-
-// Run the faceWave function on page load
-window.onload = faceWave;
 
 // Function to toggle dropdown visibility
 function toggleDropdown(dropdownId) {
@@ -47,22 +41,34 @@ function toggleSubsection(subsectionId) {
     if (activeSubsection) {
         activeSubsection.style.display = 'block'; // Show the clicked subsection
     }
+}
 
+// Cursor follow effect
+function initializeCursorFollow() {
     const cursorFollow = document.getElementById('cursor-follow');
 
-// Show the cursor-follow image when the mouse moves
-document.addEventListener('mousemove', (event) => {
-    cursorFollow.style.display = 'block'; // Show the image
-    cursorFollow.style.transform = `translate(${event.clientX}px, ${event.clientY}px)`;
-});
+    // Show the cursor-follow image when the mouse moves
+    document.addEventListener('mousemove', (event) => {
+        cursorFollow.style.display = 'block';
+        cursorFollow.style.transform = `translate(${event.clientX}px, ${event.clientY}px)`;
+    });
 
-// Optionally hide it when the mouse leaves the window
-document.addEventListener('mouseleave', () => {
-    cursorFollow.style.display = 'none';
-});
+    // Hide when the mouse leaves the window
+    document.addEventListener('mouseleave', () => {
+        cursorFollow.style.display = 'none';
+    });
 
-// Optionally show it when the mouse enters the window again
-document.addEventListener('mouseenter', () => {
-    cursorFollow.style.display = 'block';
-});
+    // Show when the mouse enters the window
+    document.addEventListener('mouseenter', () => {
+        cursorFollow.style.display = 'block';
+    });
 }
+
+// Main function to initialize all animations and effects on page load
+function run() {
+    faceWave(); // Start falling faces
+    initializeCursorFollow(); // Start cursor-follow effect
+}
+
+// Run the main function on page load
+window.onload = run;
