@@ -2,7 +2,7 @@
 function createFallingFace() {
     const faceContainer = document.getElementById('face-container');
     const face = document.createElement('img');
-    face.src = 'images/onion.jpg'; // Path to your face image
+    face.src = 'images/Onion.jpg'; // Path to your face image
     face.classList.add('falling-face');
     
     // Set random horizontal position and animation
