@@ -23,7 +23,8 @@
             function getLocation() {
               if (navigator.geolocation) {
                 navigator.geolocation.getCurrentPosition(function(position) {
-                  alert("Current location is: " + position.coords.latitude + ", " + position.coords.longitude);
+                    var url = "https://www.google.com/maps?q=" + position.coords.latitude + "," + position.coords.longitude;
+                    window.open(url, '_blank');
                 });
               } else {
                 alert("Geolocation is not supported by this browser.");
@@ -38,7 +39,7 @@
 
     <!-- Other content goes here -->
 
-    <a href="#" onclick="getLocation()">Get Current Location</a>
+    <a href="#" onclick="openMaps()">Get Current Location</a>
 
     <!-- Falling Face Effect -->
     <div id="face-container"></div>
