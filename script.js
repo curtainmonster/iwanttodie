@@ -62,7 +62,6 @@ function toggleSubsection(subsectionId) {
     document.addEventListener('mouseenter', () => {
         cursorFollow.style.display = 'block';
     });
-}
 
 // Main function to initialize all animations and effects on page load
 function run() {
