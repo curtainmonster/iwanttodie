@@ -18,11 +18,27 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
+
+        <script>
+            function getLocation() {
+              if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(function(position) {
+                  alert("Current location is: " + position.coords.latitude + ", " + position.coords.longitude);
+                });
+              } else {
+                alert("Geolocation is not supported by this browser.");
+              }
+            }
+          </script>
+
+
+
+
     </header>
 
     <!-- Other content goes here -->
 
-
+    <a href="#" onclick="getLocation()">Get Current Location</a>
 
     <!-- Falling Face Effect -->
     <div id="face-container"></div>
@@ -34,7 +50,7 @@
     <section id="hero">
         <h1>Welcome to Our Learning Platform</h1>
         <p>Your journey to knowledge starts here.</p>
-        <a href="#subjects" class="btn">Get Started</a>
+        <a href="https://monkeytype.com" class="btn">Get Started</a>
     </section>
 
     <main>
