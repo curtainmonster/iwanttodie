@@ -42,6 +42,6 @@ function toggleSubsection(subsectionId) {
 }
 
 // Initialize animations and effects on page load
-window.onload = function() {
-    faceWave();
-};
+// window.onload = function() {
+//     faceWave();
+// };
