@@ -126,7 +126,7 @@ a:hover {
 
 .falling-face {
     position: absolute;
-    width: 70px;
+    width: 100px;
     height: 80px;
     opacity: 1;
     transition: opacity 3s ease-out;
