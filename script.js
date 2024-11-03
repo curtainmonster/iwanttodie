@@ -42,31 +42,10 @@ function toggleSubsection(subsectionId) {
         activeSubsection.style.display = 'block'; // Show the clicked subsection
     }
 }
-
-// Cursor follow effect
-//function initializeCursorFollow() {
-    const cursorFollow = document.getElementById('cursor-follow');
-
-    // Show the cursor-follow image when the mouse moves
-    document.addEventListener('mousemove', (event) => {
-        cursorFollow.style.display = 'block';
-        cursorFollow.style.transform = `translate(${event.clientX}px, ${event.clientY}px)`;
-    });
-
-    // Hide when the mouse leaves the window
-    document.addEventListener('mouseleave', () => {
-        cursorFollow.style.display = 'none';
-    });
-
-    // Show when the mouse enters the window
-    document.addEventListener('mouseenter', () => {
-        cursorFollow.style.display = 'block';
-    });
-
+   
 // Main function to initialize all animations and effects on page load
 function run() {
     faceWave(); // Start falling faces
-    initializeCursorFollow(); // Start cursor-follow effect
 }
 
 // Run the main function on page load
