@@ -45,3 +45,11 @@ function toggleSubsection(subsectionId) {
  window.onload = function() {
      faceWave();
  };
+
+ // custom cursor
+ const cursor = document.querySelector('.custom-cursor');
+
+document.addEventListener('mousemove', (e) => {
+  cursor.style.top = `${e.clientY}px`;
+  cursor.style.left = `${e.clientX}px`;
+});
