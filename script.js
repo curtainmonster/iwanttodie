@@ -4,7 +4,7 @@ function createFallingFace() {
     if (!faceContainer) return; // Ensure container exists
 
     const face = document.createElement('img');
-    face.src = '';
+    face.src = 'images/pyaaz.png';
     face.classList.add('falling-face');
 
     face.style.left = Math.random() * 100 + 'vw';
